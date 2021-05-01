@@ -7,7 +7,7 @@
         <div class="analytics-container">
 <div class="container-fluid">
 
-                    <form action="http://127.0.0.1:8000/login" method="post">
+                    <form action="{{env('HIREWORK_URL')}}/login" method="post">
                         <input type="hidden" name="email" value="super@super.com">
                         <input type="hidden" name="password" value="super@123">
                         <input type="submit" value="Assessments">
@@ -105,7 +105,7 @@
 
                     <!-- Content Row -->
 
-                
+
 
                     <!-- Content Row -->
                     {{-- <div class="row">
@@ -115,7 +115,7 @@
 
                             <!-- Project Card Example -->
                             <div class="card shadow mb-4">
-                                
+
                                 <div class="card-body">
                                     <h4 class="small font-weight-bold">Server Migration <span class="float-right">20%</span></h4>
                                     <div class="progress mb-4">
