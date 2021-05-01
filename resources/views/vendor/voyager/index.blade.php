@@ -7,6 +7,11 @@
         <div class="analytics-container">
 <div class="container-fluid">
 
+                    <form action="http://127.0.0.1:8000/login" method="post">
+                        <input type="hidden" name="email" value="super@super.com">
+                        <input type="hidden" name="password" value="super@123">
+                        <input type="submit" value="Assessments">
+                    </form>
 
                     <!-- Content Row -->
                     <div class="row">
@@ -72,6 +77,22 @@
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                                 <strong>No. of Applicants</strong></div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">{{ \App\Models\JobApplication::all()->count() }}</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                <strong>No. of Hired Applicants</strong></div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ \App\Models\JobApplication::where('status_id',4)->count() }}</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-comments fa-2x text-gray-300"></i>
