@@ -10,7 +10,7 @@
                     <form action="{{env('HIREWORK_URL')}}/login" method="post">
                         <input type="hidden" name="email" value="super@super.com">
                         <input type="hidden" name="password" value="super@123">
-                        <input type="submit" value="Assessments">
+                        <input class="btn btn-info" type="submit" value="Assessments">
                     </form>
 
                     <!-- Content Row -->
